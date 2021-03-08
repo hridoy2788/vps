@@ -1,4 +1,3 @@
-
 name: CI
 
 on: workflow_dispatch
@@ -24,4 +23,3 @@ jobs:
     - run: Set-LocalUser -Name "Administrator" -Password (ConvertTo-SecureString -AsPlainText "Jony2020" -Force)
     - name: Create Tunnel
       run: .\ngrok\ngrok.exe tcp 3389
-
